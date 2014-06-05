@@ -171,6 +171,14 @@ this.overwriteLinks = function(data) {
       .selectAll("rect").attr("height", 35);
       return this;
       }
+
+      this.xExtent = function() {
+      return xExtent;
+      }
+
+      this.yExtent = function() {
+      return yExtent;
+      }
       
       this.xScale = function(newScale) {
       if (!arguments.length) return xScale;
